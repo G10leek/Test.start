@@ -1,0 +1,48 @@
+package projetos;
+
+import java.util.Scanner;
+
+public class Teste_3 {
+
+	public static void main(String[] args) {
+
+		//Criação da matriz
+		int matriz[][] = new int[3][3];
+		Scanner input = new Scanner(System.in);
+		
+		//Laço para dar entrada dos números da matriz
+		for (int i = 0; i < 3; i++) {
+			for (int j = 0; j < 2; j++) {
+				matriz[i][j] = input.nextInt();
+
+			}
+
+		}
+		System.out.println("Matriz 3x2");
+		//Laço para imprimir a matriz normal
+		for (int i = 0; i < 3; i++) {
+			System.out.print("{ ");
+			for (int j = 0; j < 2; j++) {
+				System.out.print(matriz[i][j] + " ");
+			}
+			System.out.print("}");
+			System.out.println("");
+
+		}
+		System.out.println("");
+
+		System.out.println("Matriz Transposta 2x3");
+		
+		//Laço para imprimir a matriz transposta
+		for (int j = 0; j < 2; j++) {
+			System.out.print("{ ");
+			for (int i = 0; i < 3; i++) {
+				System.out.print(matriz[i][j] + " ");
+
+			}
+			System.out.print("}");
+			System.out.println("");
+
+		}
+	}
+}
