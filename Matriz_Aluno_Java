@@ -1,0 +1,38 @@
+package projetos;
+
+import java.util.Scanner;
+
+public class Teste_5 {
+
+	public static void main(String[] args) {
+
+		String matriz[][][] = new String[2][10][3];
+		Scanner input = new Scanner(System.in);
+
+		for (int turma = 0; turma < 2; turma++) {
+			turma += 1;
+			System.out.println("TURMA "+ turma);
+			turma -= 1;
+			for (int aluno = 0; aluno < 10; aluno++) {
+				aluno += 1;
+				System.out.print("Digite o "+ aluno + "º ALUNO: ");
+				System.out.println("");
+				aluno -= 1;
+				for (int nota = 0; nota < 3; nota++) {
+					matriz[turma][aluno][nota] = input.nextLine();
+				
+				}
+			}
+
+		}
+		System.out.println("");
+		for (int turma = 0; turma < 2; turma++) {
+			for (int aluno = 0; aluno < 10; aluno++) {
+				for (int nota = 0; nota < 3; nota++) {
+					System.out.print(matriz[turma][aluno][nota]+ " ");
+					
+				}System.out.println("");
+			}System.out.println("");
+		}
+	}
+}
